@@ -1,0 +1,100 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Changa One' , cursive;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Changa One', cursive;
+    font-size: 60px;
+    color: var(--vermelho);
+    margin-left: 10px;
+}
+
+.logo span {
+    font-family: 'Festive', cursive;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+
+.filme-principal {
+    font-size: 16px;
+    color: #FFF;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../images/fastFuriousPoster.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.filme-principal .container {
+    margin-left: 30px;
+    width: 80vw;
+}
+
+.titulo {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    margin-bottom: 40px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #FFF;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s ease-in all;
+    border: 1px solid #FFF;
+}
+
+.botao:hover {
+    background-color: #FFF;
+    color: #141414;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.carrossel-filmes {
+    margin-top: 15px;
+}
+
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
